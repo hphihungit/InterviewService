@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/calendar.css">
+</head>
+<body>
+    <div id="main">
+        <input type="checkbox" hidden name="" id="check" class="input__check--dashboard">
+        <div class="dashboard">
+            <div class="dashboard__logo"></div>
+            <ul class="dashboard__list">
+                <li class="dashboard__item">
+                    <a href="interviewee.html" class="icon__link">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="interviewee.html" class="link">Dashboard</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="cvinterviewee.html" class="icon__link">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                    <a href="cvinterviewee.html" class="link">Profile</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="order.html" class="icon__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="order.html" class="link">Interviewee</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="calendar.html" class="icon__link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </a>
+                    <a href="calendar.html" class="link">My Schedule</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </a>
+                    <a href="" class="link">History</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                    <a href="" class="link">Feedback</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <div class="header__icon">
+                    <label for="check" class="fa-solid fa-bars header__label"></label>
+                </div>
+
+                <div class="header__time">
+                    Friday, June 23, 2023 8:00:00 am
+                </div>
+
+                <div class="header__news">
+                    <label for="check__bell" class="fa-regular fa-bell header__label--bell">
+                        <input type="checkbox" hidden name="" id="check__bell" class="input__check--bell">
+                        <div class="notification">
+                            No Notification
+                        </div>
+                    </label>
+                    <div class="header__avatar">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+                </div>
+            </div> 
+
+            <div class="schdule--wrap">
+                <div class="schedule">
+                    
+                </div>
+            </div>
+            
+            <div class="calendar--wrap">
+                <div class="calendar__sub">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-outlined">chevron_left</span>
+                            <span id="next" class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </header>
+    
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <label for="search" class="search__title">
+                        Ngày hẹn:
+                    </label>
+                <div class="search__date--box">
+                    <input type="date" name="" id="search" class="search__date">
+                </div>
+                <button class="search__btn">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js-calendar.js"></script>
+
+    <script>
+        const currentDate = document.querySelector(".current-date"),
+        daysTag = document.querySelector(".days"),
+        prevNextIcon = document.querySelectorAll(".icons span");
+
+        // getting new date, current year and month
+        let date = new Date(),
+        currYear = date.getFullYear(),
+        currMonth = date.getMonth();
+
+        const months = ["January", "February", "March", "April", "May", "June", "July",
+                    "August", "September", "October", "November", "December"];
+
+        const renderCalendar = () => {
+            let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
+            lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
+            lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
+            lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+            let liTag = "";
+
+            for (let i = firstDayofMonth; i > 0; i--) {     // creating li of previous month last days
+                liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+            }
+
+            for (let i = 1; i <= lastDateofMonth; i++) {    // creating li of all days of current month
+                // adding active class to li if current day, month, and year matched
+                let isToday  = i === date.getDate() && currMonth === new Date().getMonth()
+                            && currYear === new Date().getFullYear() ? "active" : "";
+                liTag += `<li class="${isToday}">${i}</li>`;
+            }
+
+            for (let i = lastDayofMonth; i < 6; i++) {      // creating li of next month first days
+                liTag += `<li class="inactive">${i- lastDayofMonth + 1}</li>`;
+            }
+
+            currentDate.innerText = `${months[currMonth]} ${currYear}`;
+            daysTag.innerHTML = liTag;
+        }
+        renderCalendar();
+
+        prevNextIcon.forEach(icon => {
+            icon.addEventListener("click", () => { // adding click event on both icons
+                // if clicked icon is previous icon then decrement current month by 1 else increase it by 1
+                currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+                if (currMonth < 0 || currMonth > 11) {
+                    // creating a new date of current years & month and pass it as date value
+                    date = new Date(currYear, currMonth);
+                    currYear = date.getFullYear();      // updating current year with new date year 
+                    currMonth = date.getMonth();        // updating current month with new date month
+                } else {    // else pass new Date as date value 
+                    date = new Date();
+                }
+                renderCalendar();
+            });
+        });
+    </script>
+</body>
+</html>

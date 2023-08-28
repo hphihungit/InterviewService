@@ -1,0 +1,53 @@
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #login {
+        width: 80%;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+
+    #header {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .header__logo {
+        width: 50%;
+        min-height: 200px;
+        margin: 0 auto;
+        background-image: url('../img/logo.png');
+        background-position: 50% 200%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .login__logo {
+        display: none;
+    }
+
+    .login__form {
+        width: 80%;
+        min-height: 700px;
+        margin: 0 auto;
+    }
+
+
+}
+
+/*Mobile*/
+@media (max-width: 46.1875em) {
+
+}
+
+/*Tablet & Mobile*/
+@media (max-width: 64em) {
+
+}

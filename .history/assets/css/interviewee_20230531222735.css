@@ -1,0 +1,31 @@
+#main {
+    width: 100%;
+    display: flex;
+}
+
+.dashboard {
+    width: 18%;
+    min-height: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard__list {
+    width: 100%;
+}
+
+.dashboard__item {  
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.dashboard__item:hover {
+    background-color: var(--blue-color);
+}
+
+.dashboard__item:hover .link,
+.dashboard__item:hover .iconlink {
+    color: #fff;
+}

@@ -1,0 +1,33 @@
+#dashboard {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: paleturquoise;
+}
+
+.dashboard__logo {
+    width: 100%;
+    min-height: 100px;
+    background-image: url('../img/logo-landing.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 40%;  
+    margin-bottom: 20px;
+}
+
+.dashboard__list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dashboard__item {
+    padding: 12px 0px;    
+}
+
+.dashboard__item a {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+}

@@ -1,0 +1,70 @@
+/*Mobile < 740px*/
+@media (max-width: 46.1875em) {
+
+}
+
+/*Tablet 740px - 1023px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .dashboard {
+        display: none;
+    }
+
+    .header__icon {
+        width: 10%;
+    }
+
+    .header__search {
+        width: 70%;
+    }
+
+    .header__time {
+        display: none;
+    }
+
+    .header__news {
+        width: 20%;
+    }
+
+    .header__label--bell {
+        padding-right: 20px;
+    }
+    
+    .menu__mobile {
+        display: block;
+        width: 40%;
+        max-width: 100%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+
+    #weekdays div {
+        font-size: 14px;
+    }
+}
+
+/*PC Low 1024px -1280px*/
+@media (min-width: 64em) and (max-width: 80em) {
+    .dashboard {
+        display: none;
+    }
+
+    .menu__mobile {
+        display: block;
+        width: 40%;
+        max-width: 100%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+}

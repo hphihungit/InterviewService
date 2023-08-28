@@ -1,0 +1,44 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#login {
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+}
+
+.login__logo {
+    width: 50%;
+    min-height: 500px;
+    background-color: palegreen;
+}
+
+.logo {
+    width: 100%;
+    min-height: 150px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% -82%;
+}
+
+.logo__text--big {
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.login__form {
+    width: 50%;
+    min-height: 500px;
+    background-color: 
+    paleturquoise;
+}

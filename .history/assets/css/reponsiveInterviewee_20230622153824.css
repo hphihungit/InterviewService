@@ -1,0 +1,45 @@
+/*Mobile < 740px*/
+@media (max-width: 46.1875em) {
+    .dashboard {
+        display: none;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav__icon {
+        width: 10%;
+    }
+
+    .nav__search {
+        width: 85%;
+    }
+
+    .nav__news {
+        width: 5%;
+    }
+
+    .nav__label--bell {
+        padding-right: 12px;
+        font-size: 28px;
+    }
+
+    .nav__avatar {
+        display: none;
+    }
+
+    .nav__time {
+        display: none;
+    }
+}
+
+/*Tablet 740 - 1028px*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+
+}
+
+/*PC Low 1028 - 1280px*/
+@media (min-width: 64em) and (max-width: 80em) {
+
+}

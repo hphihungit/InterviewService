@@ -1,0 +1,35 @@
+#header {
+    width: 100%;
+    height: 720px;
+    background-color: pink;
+}
+
+#header .navbar--fixed {
+    width: 100%;
+    height: 72px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header__navbar {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    background-color: aquamarine;
+}
+
+.header__navbar .navbar__logo {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: bisque;
+}
+
+.logo--landing {
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,75 @@
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+    .register__form {
+        width: 80%;
+    }
+
+    .register__title {
+        font-size: 40px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .login__text {
+        font-size: 20px;
+    }
+
+    .login__btn a {
+        font-size: 20px;
+    }
+
+    .form__input {
+        padding-bottom: 20px;
+    }
+
+    .register__label {
+        font-size: 24px;
+    }
+
+    .register__input {
+        font-size: 24px;
+        padding: 8px 0px;
+    }
+
+    .register__select {
+        font-size: 20px;
+    }
+
+    .button {
+        padding: 12px 0px;
+    }
+
+    .form__logo--dif i{
+        font-size: 48px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 46.1875em) {
+    .register__form {
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .register__title {
+        margin-bottom: 8px;
+    }
+
+    .login {
+        margin-bottom: 10px;
+    }
+
+    .form__dif {
+        margin-top: 0;
+    }
+}
+
+/*Tablet & Mobile*/
+@media (min-width: 64em) and (max-width: 80em) {
+
+}

@@ -1,0 +1,29 @@
+@media (max-width: 36em) {
+    .dashboard {
+        display: none;
+    }
+
+    .nav__icon {
+        width: 10%;
+    }
+
+    .nav__time {
+        display: none;
+    }
+}
+
+@media (min-width: 36em) {
+    
+}
+
+@media (min-width: 48em) {
+    
+}
+
+@media (min-width: 62em) {
+    
+}
+
+@media (min-width: 75em) {
+    
+}

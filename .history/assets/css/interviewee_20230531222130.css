@@ -1,0 +1,10 @@
+#main {
+    width: 100%;
+    display: flex;
+}
+
+.dashboard {
+    width: 18%;
+    min-height: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}

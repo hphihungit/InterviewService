@@ -1,0 +1,15 @@
+#main {
+    width: 100%;
+    position: relative;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    left: 152px;
+    border-radius: 50%;
+    border: 10px solid var(--blue-color);
+    box-shadow: 0 10px 10px rgba(64, 169, 255, 0.2);
+}

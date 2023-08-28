@@ -1,0 +1,36 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#login {
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+}
+
+.login__logo {
+    width: 50%;
+    min-height: 500px;
+    background-color: palegreen;
+}
+
+.logo {
+    width: 100%;
+    min-height: 200px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+    background-color: palevioletred;
+}
+
+.login__form {
+    width: 50%;
+    min-height: 500px;
+    background-color: 
+    paleturquoise;
+}

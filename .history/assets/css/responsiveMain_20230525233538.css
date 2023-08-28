@@ -1,0 +1,122 @@
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+    .header__navbar {
+        display: none;
+    }
+
+    .navbar--wrap {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .navbar__mobile {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar__mobile--logo {
+        width: 50%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mobile--logo {
+        color: var(--white-color);
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .navbar__mobile--menu {
+        width: 50%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navbar__mobile-icon {
+        color: var(--white-color);
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .navbar__mobile-icon label {
+        font-size: 28px;
+        padding: 12px 0px;
+        padding-left: 12px;
+    }
+
+    .poster__text {
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    .poster__text--title {
+        font-size: 28px;
+        letter-spacing: 12px;
+        padding-left: 10px;
+    } 
+
+    .poster__text--big {
+        width: 90%;
+        font-size: 150px;
+        line-height: 154px;
+    }
+
+    .poster__text--slogan {
+        width: 97%;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 48px;
+        padding-left: 10px;
+    }
+
+    .poster__text--btn {
+        padding: 10px;
+    }
+
+    .book {
+        padding: 17px 45px;
+        font-size: 22px;
+    }
+
+    .poster__img {
+        display: none;
+    }
+
+    .service__text {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .icon--wrap{
+        margin: 0 auto;
+    }
+
+    .service__item--text-big{
+        text-align: center;
+    }
+    
+    .service__item--text-small{
+    
+    }
+}
+
+/*Mobile*/
+@media (max-width: 739px) {
+    
+}
+
+/*Tablet & Mobile*/
+@media (max-width: 1024px) {
+    .field__list {
+        flex-wrap: wrap;
+    }
+}

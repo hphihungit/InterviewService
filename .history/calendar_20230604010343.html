@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #custom-bar {
+            width: 0;
+            height: 4px;
+            background-color: transparent;
+            transition: width 0.3s ease-out;
+        }
+
+        #custom-bar.active {
+            background-color: #1a73e8;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="custom-button">Bấm vào đây</button>
+    <div id="custom-bar"></div>
+
+    <script>
+        var customButton = document.getElementById('custom-button');
+        var customBar = document.getElementById('custom-bar');
+
+        customButton.addEventListener('click', function () {
+            customBar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

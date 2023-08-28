@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cv.css">
+</head>
+<body>
+    <div id="main">
+        <input type="checkbox" hidden name="" id="check" class="input__check--dashboard">
+        <div class="dashboard">
+            <div class="dashboard__logo"></div>
+            <ul class="dashboard__list">
+                <li class="dashboard__item">
+                    <a href="interviewee.html" class="icon__link">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="interviewee.html" class="link">Dashboard</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="cvinterviewee.html" class="icon__link">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                    <a href="cvinterviewee.html" class="link">Profile</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="order.html" class="icon__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="order.html" class="link">Interviewee</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="calendar.html" class="icon__link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </a>
+                    <a href="calendar.html" class="link">My Schedule</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </a>
+                    <a href="" class="link">History</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                    <a href="" class="link">Feedback</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="header">
+                <div class="header__icon">
+                    <label for="check" class="fa-solid fa-bars header__label"></label>
+                </div>
+
+                <div id="realTimeClock" class="header__time">
+                </div>
+
+                <div class="header__news">
+                    <label for="check__bell" class="fa-regular fa-bell header__label--bell">
+                        <input type="checkbox" hidden name="" id="check__bell" class="input__check--bell">
+                        <div class="notification">
+                            No Notification
+                        </div>
+                    </label>
+                    <div class="header__avatar">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content__sub">
+                    <div class="content__avatar">
+                        <img src="assets/img/user.png" alt="" class="content__sub--avatar">
+                    </div>
+
+                    <div class="content__edu--title">
+                        Education
+                        <i class="fa-solid fa-circle-plus plus"></i>
+                    </div>
+
+                   <ul class="content__edu--list">
+                        <li class="content__edu--item">
+                            <p class="time">12 June 2023</p>
+                            <p class="uni">Trường Đại học Công nghệ Thông tin và Tuyền thông Việt - Hàn</p>
+                        </li>
+                   </ul>
+
+                    <div class="content__skill--title">
+                        Skill
+                        <i class="fa-solid fa-circle-plus plus"></i>
+                    </div>
+
+                    <ul class="content__skill--list">
+                        <li class="content__skill--item">
+                            Communicate
+                            <div class="rating__dad">
+                                <div class="rating__communicate"></div>
+                            </div>
+                        </li>
+                        <li class="content__skill--item">
+                            Team work
+                            <div class="rating__dad">
+                                <div class="rating__teamwork"></div>
+                            </div>
+                        </li>
+                        <li class="content__skill--item">
+                            English
+                            <div class="rating__dad">
+                                <div class="rating__english"></div>
+                            </div>
+                        </li>
+                        <li class="content__skill--item">
+                            Problem solving
+                            <div class="rating__dad">
+                                <div class="rating__problem"></div>
+                            </div>
+                        </li>
+                        <li class="content__skill--item">
+                            Responsibility
+                            <div class="rating__dad">
+                                <div class="rating__responsibility"></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="content__technology--title">
+                        Technology
+                        <i class="fa-solid fa-circle-plus plus"></i>
+                    </div>
+
+                    <ul class="content__technology--list">
+                        <li class="content__technology--item">
+                            HTML/CSS/JS
+                            <div class="rating__dad">
+                                <div class="rating__html"></div>
+                            </div>
+                        </li>
+                        <li class="content__technology--item">
+                            ReactJS
+                            <div class="rating__dad">
+                                <div class="rating__react"></div>
+                            </div>
+                        </li>
+                        <li class="content__technology--item">
+                            NodeJS
+                            <div class="rating__dad">
+                                <div class="rating__node"></div>
+                            </div>
+                        </li>
+                        <li class="content__technology--item">
+                            Java
+                            <div class="rating__dad">
+                                <div class="rating__java"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content__main">
+                    <div class="content__user">
+                        <p class="content__user--name">
+                            Hoàng Phi Hùng
+                        </p>
+                        <p class="content__user--id">
+                            123456789
+                        </p>
+                    </div>
+
+                    <div class="info__main">
+                        <div class="content__about--title">
+                            About
+                            <i class="fa-solid fa-pen pen"></i>
+                        </div>
+    
+                        <p class="content__about--text">
+                            Sinh viên năm nhất trường Đại học Công nghệ Thông Tin và Truyền thông Việt - Hàn. Lớp sinh hoạt 22ITe
+                        </p>
+    
+                        <div class="content__exp--title">
+                            Experience
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                        </div>
+    
+                        <ul class="content__exp--list">
+                            <li class="content__exp--item">
+                                <p class="time">12/6/2023 - 12/7/2023</p>
+                                <p class="describe">Làm fullstack dự án Website Interview Service</p>
+                            </li>
+                            <li class="content__exp--item">
+                                <p class="time">12/6/2023 - 12/8/2023</p>
+                                <p class="describe">Thực tập tại ABC Solfware</p>
+                            </li>
+                            <li class="content__exp--item">
+                                <p class="time">12/2/2024 - 12/4/2024</p>
+                                <p class="describe">Thực tập tại DEF Solfware</p>
+                            </li>
+                        </ul>
+    
+                        <div class="content__exp--title">
+                            Project
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                        </div>
+    
+                        <ul class="content__exp--list">
+                            <li class="content__exp--item">
+                                <p class="name--project">Website Interview Service</p>
+                                <p class="role">Role: Fullstack</p>
+                            </li>
+                            <li class="content__exp--item">
+                                <p class="name--project">Website Interview Service</p>
+                                <p class="role">Role: Fullstack</p>
+                            </li>
+                            <li class="content__exp--item">
+                                <p class="name--project">Website Interview Service</p>
+                                <p class="role">Role: Fullstack</p>
+                            </li>
+                        </ul>
+
+                        <div class="content__contact--title">
+                            Contact 
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                        </div>
+
+                        <ul class="content__contact--list">
+                            <li class="content__contact--item">
+                                <p class="title">Phone:</p>
+                                <p class="about">084530359</p>
+                            </li>
+                            <li class="content__contact--item">
+                                <p class="title">Email:</p>
+                                <p class="about">hunghp.22ite@vku.udn.vn</p>
+                            </li>
+                            <li class="content__contact--item">
+                                <p class="title">Address:</p>
+                                <p class="about">Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn</p>
+                            </li>
+                            <li class="content__contact--item">
+                                <p class="title">Github:</p>
+                                <a href="https://github.com/hphihungit" class="linkgit">https://github.com/hphihungit</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

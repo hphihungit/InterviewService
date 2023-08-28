@@ -1,0 +1,16 @@
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+    .register__form {
+        width: 80%;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 46.1875em) {
+
+}
+
+/*Tablet & Mobile*/
+@media (max-width: 64em) {
+
+}

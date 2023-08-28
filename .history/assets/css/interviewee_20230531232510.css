@@ -1,0 +1,140 @@
+#main {
+    width: 100%;
+    display: flex;
+}
+
+.dashboard {
+    width: 18%;
+    min-height: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard__logo {
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-size: 62%;
+    background-position: 50% 85%;
+}
+
+.dashboard__list {
+    width: 100%;
+}
+
+.dashboard__item {  
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.dashboard__item:hover {
+    background-color: var(--blue-color);
+}
+
+.dashboard__item:hover .link,
+.dashboard__item:hover .icon__link {
+    color: #fff;
+}
+
+.icon__link {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    font-size: 24px;
+    color: #000;
+}
+
+.link {
+    display: inline-block;
+    width: 80%;
+    font-size: 20px;
+    padding: 16px 0px;
+    color: #000;
+}
+
+.container {
+    width: 82%;
+}
+
+.header {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.header__icon {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__label {
+    font-size: 28px;
+}
+
+.header__time {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header__news {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__label--bell {
+    font-size: 28px;
+    position: relative;
+}
+
+.header__avatar {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.about {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cv {
+    width: 32%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 16px;
+}
+
+.cv__avatar {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    padding-top: 40px;
+    border-radius: 50%;
+    border: 5px solid rgba(64, 169, 255, 0.5);
+}
+
+.cv__avatar img {
+    width: 200px;
+    height: 200px;
+}

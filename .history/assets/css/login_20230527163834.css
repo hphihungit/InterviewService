@@ -1,0 +1,82 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#login {
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+}
+
+.login__logo {
+    width: 50%;
+    min-height: 250px;
+    align-self: center;
+}
+
+.logo {
+    width: 100%;
+    min-height: 150px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% -82%;
+}
+
+.logo__text--big {
+    color: var(--black-color);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.logo__text--small {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--black-color);
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.login__form {
+    width: 50%;
+    min-height: 500px;
+    background-color: paleturquoise;
+}
+
+.logo__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.register {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.registe__text {
+    width: 70%;
+    display: flex;
+}
+
+.register__btn {
+    width: 30%;
+    text-align: center;
+    padding: 8px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}

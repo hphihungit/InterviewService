@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+    <div id="main">
+        <div id="dashboard">
+            <div class="dashboard__logo">
+                
+            </div>
+            <ul class="dashboard__list">
+                <li class="dashboard__item">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="">Dashboard</a>
+                </li>
+                <li class="dashboard__item">
+                    <i class="fa-solid fa-user"></i>    
+                    <a href="">User</a>
+                </li>
+                <li class="dashboard__item">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <a href="">Schedule</a>
+                </li>
+                <li class="dashboard__item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="">Transaction</a>
+                </li>
+                <li class="dashboard__item">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="">Log out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="container">
+            <div class="header">
+                <div class="header__item">
+                    <i class="fa-solid fa-users color--purple"></i>
+                    <span class="number color--purple">100</span>
+                    <span class="text color--purple">User</span>
+                </div>
+
+                <div class="header__item">
+                    <i class="fa-solid fa-calendar-check color--orange"></i>
+                    <span class="number color--orange">50</span>
+                    <span class="text color--orange">Appointment</span>
+                </div>
+
+                <div class="header__item">
+                    <i class="fa-solid fa-sack-dollar color--red"></i>
+                    <span class="number color--red">300$</span>
+                    <span class="text color--red">Earning</span>
+                </div>
+
+                <div class="header__item">
+                    <i class="fa-solid fa-globe color--blue"></i>
+                    <span class="number color--blue">50</span>
+                    <span class="text color--blue">User</span>
+                </div>
+
+                <div class="header__item">
+                    <i class="fa-solid fa-users color--green"></i>
+                    <span class="number color--green">200</span>
+                    <span class="text color--green">Feedback</span>
+                </div>
+            </div>
+
+            <div class="earning">
+                <div class="report">
+                    <div class="report__chart">
+                        <div class="report__text--big">
+                            <span>Annual revenue</span>
+                        </div>
+    
+                        <div class="report__total">
+                            $1,300 USD <span>(+ 18.18%)</span>    
+                        </div>
+    
+                        <div class="chart"></div>
+                    </div>
+
+                    <div class="report__descibe">
+                        <div class="btn">
+                            <button class="btn--year">2023</button>
+                        </div>
+                        <div class="descibe">
+                            <div class="this--year">
+                                <div class="this--year--text">This years</div>
+                                <div class="this--year--total">$1,300</div>
+                            </div>
+
+                            <div class="last--year">
+                                <div class="last--year--text">Last years</div>
+                                <div class="last--year--total">$1,100</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="note__title">
+                        Todo List
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                    <ul class="note__list">
+                        <li class="note__item">
+                            <input type="checkbox" name="" id="check" class="note__item--check">
+                                <div class="task">
+                                    <label for="check" class="note__item--label">Hoàng Phi Hùng</label>
+                                    <div class="task--text">
+                                        <p class="task__day">
+                                            24 June 2023
+                                        </p>
+                                        <span class="task__status">
+                                            Done
+                                        </span>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="note__item"></li>
+                        <li class="note__item"></li>
+                        <li class="note__item"></li>
+                        <li class="note__item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

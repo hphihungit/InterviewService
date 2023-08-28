@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/order.css">
+</head>
+
+<body>
+    <div id="main">
+        <input type="checkbox" hidden name="" id="check" class="input__check--dashboard">
+        <div class="dashboard">
+            <div class="dashboard__logo"></div>
+            <ul class="dashboard__list">
+                <li class="dashboard__item">
+                    <a href="interviewee.html" class="icon__link">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="interviewee.html" class="link">Dashboard</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="cvinterviewee.html" class="icon__link">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                    <a href="cvinterviewee.html" class="link">Profile</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="order.html" class="icon__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="order.html" class="link">Interviewee</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="calendar.html" class="icon__link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </a>
+                    <a href="calendar.html" class="link">My Schedule</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </a>
+                    <a href="" class="link">History</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                    <a href="" class="link">Feedback</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <div class="header__icon">
+                    <label for="check" class="fa-solid fa-bars header__label"></label>
+                </div>
+
+                <div class="header__search">
+                    <div class="input__search--box">
+                        <input type="text" name="" id="" class="input__search">
+                    </div>
+                    <div class="input__search--btn">
+                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                    </div>
+                </div>
+
+                <div class="header__time">
+                    Friday, June 23, 2023 8:00:00 am
+                </div>
+
+                <div class="header__news">
+                    <label for="check__bell" class="fa-regular fa-bell header__label--bell">
+                        <input type="checkbox" hidden name="" id="check__bell" class="input__check--bell">
+                        <div class="notification">
+                            No Notification
+                        </div>
+                    </label>
+                    <div class="header__avatar">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="classify">
+                <div class="classify__title">
+                    <label for="check__classify--option" class="classify__label--text">Option</label>
+                    <label for="check__classify--option" class="fa-solid fa-arrow-down classify__label"></label>
+                </div>
+                
+                <input type="checkbox" hidden name="" id="check__classify--option" class="classify__input">
+                <div class="classify__option">
+                    <div class="classify__option--aspects">
+                        <div class="option--tilte">
+                            Aspects
+                        </div>
+    
+                        <ul class="classify__list">
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-web" class="classify__input">
+                                <label for="check--option-web">Web Developer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-app" class="classify__input">
+                                <label for="check--option-app">App Mobile Developer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-data" class="classify__input">
+                                <label for="check--option-data">Data Engineer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-ai" class="classify__input">
+                                <label for="check--option-ai">AI Engineer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-iot" class="classify__input">
+                                <label for="check--option-iot">Internet of Thing (IoT)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="classify__option--position">
+                        <div class="option--tilte">
+                            Position
+                        </div>
+    
+                        <ul class="classify__list">
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-fe" class="classify__input">
+                                <label for="check--option-fe">Front-end Developer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-be" class="classify__input">
+                                <label for="check--option-be">Back-end Developer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-fs" class="classify__input">
+                                <label for="check--option-fs">Fullstack Developer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-aie" class="classify__input">
+                                <label for="check--option-aie">AI Engineer</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-iote" class="classify__input">
+                                <label for="check--option-iote">Internet of Thing (IoT)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="classify__option--technology">
+                        <div class="option--tilte">
+                            Technology
+                        </div>
+    
+                        <ul class="classify__list">
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-java" class="classify__input">
+                                <label for="check--option-java">Java</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-py" class="classify__input">
+                                <label for="check--option-py">Python</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-node" class="classify__input">
+                                <label for="check--option-node">NodeJS</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-react" class="classify__input">
+                                <label for="check--option-react">ReactJS</label>
+                            </li>
+        
+                            <li class="classify__item">
+                                <input type="checkbox" name="" id="check--option-php" class="classify__input">
+                                <label for="check--option-php">PHP</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper box__about">
+                <div class="swiper-wrapper about">
+                    <div class="swiper-slide interviewer__list">
+                        <div class="row">
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <label style="text-align: center;" class="btn">Book Now</label>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide interviewer__list">
+                        <div class="row">
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <label style="text-align: center;" class="btn">Book Now</label>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col l-4">
+                                <div class="interviewer__item">
+                                    <div class="interviewer__avatar">
+                                        <img src="assets/img/user.png" alt="" class="interviewer__avatar--png">
+                                    </div>
+    
+                                    <div class="interviewer__rating">
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-solid fa-star star" style="color: #40a9ff;"></i>
+                                        <i class="fa-regular fa-star star" style="color: #40a9ff;"></i>
+                                    </div>
+    
+                                    <div class="interviewer__list--about">
+                                        <div class="interviewer__name">
+                                            <p class="name--title">Name:</p>
+                                            <p class="name">Hoàng Phi Hùng</p>
+                                        </div>
+        
+                                        <div class="interviewer__exp">
+                                            <div class="exp--title">Experience:</div>
+                                            <ul class="exp__list">
+                                                <li class="exp__item">FPT Solfware</li>
+                                                <li class="exp__item">Axon Solfware</li>
+                                                <li class="exp__item">ONE Solfware</li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="interviewer__position">
+                                            <p class="position--title">Position:</p>
+                                            <p class="position">
+                                                Java Developer
+                                            </p>
+                                        </div>
+        
+                                        <div class="interviewer__btn">
+                                            <button class="btn">Profile</button>
+                                            <button class="btn">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+    </script>
+</body>
+</html>

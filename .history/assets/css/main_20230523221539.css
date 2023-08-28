@@ -1,0 +1,10 @@
+#header {
+    width: 100%;
+    height: 720px;
+    background-color: pink;
+}
+
+#header .navbar--fixed {
+    width: 100%;
+    height: 72px;
+}

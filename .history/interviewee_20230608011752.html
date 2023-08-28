@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/interviewee.css">
+</head>
+
+<body>
+    <div id="main">
+        <input hidden type="checkbox" name="" id="check__dashboard" class="input__check--dashboard">
+        <div class="dashboard">
+            <div class="dashboard__logo"></div>
+            <ul class="dashboard__list">
+                <li class="dashboard__item">
+                    <a href="interviewee.html" class="icon__link">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="interviewee.html" class="link">Dashboard</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="cvinterviewee.html" class="icon__link">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                    <a href="cvinterviewee.html" class="link">Profile</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="order.html" class="icon__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="order.html" class="link">Interviewee</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="calendar.html" class="icon__link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </a>
+                    <a href="calendar.html" class="link">My Schedule</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </a>
+                    <a href="" class="link">History</a>
+                </li>
+                <li class="dashboard__item">
+                    <a href="" class="icon__link">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                    <a href="" class="link">Feedback</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <div class="header__icon">
+                    <label for="check__dashboard" class="fa-solid fa-bars header__label"></label>
+                </div>
+
+                <div id="realTimeClock" class="header__time">
+                </div>
+
+                <div class="header__news">
+                    <label for="check__bell" class="fa-regular fa-bell header__label--bell">
+                        <input type="checkbox" hidden name="" id="check__bell" class="input__check--bell">
+                        <div class="notification">
+                            No Notification
+                        </div>
+                    </label>
+                    <div class="header__avatar">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="cv">
+                    <div class="cv__avatar">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+
+                    <div class="cv__name">
+                        <p class="cv__name--interviewee">Hoàng Phi Hùng</p>
+                        <p class="cv__id">ID: 123456789</p>
+                    </div>
+
+                    <div class="cv__about">
+                        <p class="cv__about--title">About: </p>
+                        <p class="cv__about--content">
+                            Hoàng Phi Hùng là sinh viên năm nhất trường Đại học Công nghệ Thông Tin và Truyền thông
+                            Việt - Hàn.
+                        </p>
+                    </div>
+
+                    <div class="cv__email">
+                        <p class="cv__email--title">Email: </p>
+                        <p class="cv__email--content">hunghp.22ite@vku.udn.vn</p>
+                    </div>
+
+                    <div class="cv__phone">
+                        <p class="cv__phone--title">Phone: </p>
+                        <p class="cv__phone--content">0845630359</p>
+                    </div>
+
+                    <div class="cv__info">
+                        <p class="cv__info--title">Achievements: </p>
+                        <ul class="cv__info--list">
+                            <li class="cv__info--item">Lorem ipsum dolor sit amet.</li>
+                            <li class="cv__info--item">Lorem ipsum dolor sit amet.</li>
+                            <li class="cv__info--item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv__all">
+                        <a href="cvinterviewee.html" class="cv__all--btn">See details</a>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="tern">
+                        <div class="tern__item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span class="number color--purple">100</span>
+                            <span class="text color--purple">Appointment</span>
+                        </div>
+
+                        <div class="tern__item">
+                            <i class="fa-solid fa-clock"></i>
+                            <span class="number color--orange">50</span>
+                            <span class="text color--orange">hours</span>
+                        </div>
+
+                        <div class="tern__item">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span class="number color--red">300$</span>
+                            <span class="text color--red">Earning</span>
+                        </div>
+                    </div>
+
+                    <div class="appointment">
+                        <div class="appointment__title">
+                            <div class="title">
+                                Appointment
+                            </div>
+                            <div class="note">
+                                <div class="note__due">Due</div>
+                                <div class="note__overdue">Overdue</div>
+                            </div>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <th>Avatar</th>
+                                <th>Interviewer</th>
+                                <th>Date</th>
+                                <th>Deadline</th>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                    <td>
+                                        <span class="overdue">2 days 4 hours</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                    <td>
+                                        <span class="due">2 days 4 hours</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                    <td>
+                                        <span class="due">2 days 4 hours</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                    <td>
+                                        <span class="overdue">2 days 4 hours</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="view__all">
+                            <a href="" class="view__all--btn">
+                                View all
+                                <i style="font-size: 14px;" class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="history">
+                        <div class="title">
+                            History Order
+                        </div>
+
+                        <table>
+                            <thead>
+                                <th>Avatar</th>
+                                <th>Interviewer</th>
+                                <th>Time</th>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/user.png" alt="">
+                                    </td>
+                                    <td>
+                                        <p class="name">Hoàng Phi Hùng</p>
+                                        <p class="email">phihunghoang.1310@gmail.com</p>
+                                    </td>
+                                    <td>
+                                        <span class="date">21 June 2023</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="view__all">
+                            <a href="" class="view__all--btn">
+                                View all
+                                <i style="font-size: 14px;" class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            var dayOfWeek = daysOfWeek[now.getDay()];
+            var dayOfMonth = now.getDate();
+            var month = monthsOfYear[now.getMonth()];
+            var year = now.getFullYear();
+
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            var timeString = hours.toString().padStart(2, '0') + ':' +
+                minutes.toString().padStart(2, '0') + ':' +
+                seconds.toString().padStart(2, '0');
+
+            var dateString = dayOfWeek + ', ' + month + ' ' + dayOfMonth + ', ' + year;
+
+            document.getElementById('realTimeClock').innerHTML = dateString  + timeString;
+        }
+
+        // Cập nhật đồng hồ mỗi giây
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+</html>

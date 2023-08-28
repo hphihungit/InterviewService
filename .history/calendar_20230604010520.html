@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #custom-button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+
+        #custom-bar {
+            width: 0;
+            height: 50px;
+            background-color: transparent;
+            transition: width 0.3s ease-out;
+        }
+
+        #custom-bar.active {
+            background-color: #1a73e8;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="custom-button"></div>
+    <div id="custom-bar"></div>
+
+    <script>
+        var customButton = document.getElementById('custom-button');
+        var customBar = document.getElementById('custom-bar');
+
+        customButton.addEventListener('click', function () {
+            customBar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

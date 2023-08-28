@@ -1,0 +1,151 @@
+/*Mobile < 740px*/
+@media (max-width: 46.1875em) {
+    .dashboard {
+        display: none;
+    }
+
+    .header__icon {
+        width: 10%;
+    }
+
+    .header__search {
+        width: 70%;
+    }
+
+    .header__time {
+        display: none;
+    }
+
+    .header__news {
+        width: 20%;
+    }
+
+    .header__label--bell {
+        padding-right: 12px;
+    }
+    
+    .menu__mobile {
+        display: block;
+        width: 70%;
+        max-width: 100%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+
+    .header__label--bell {
+        display: none;
+    }
+
+    .classify__option {
+        flex-wrap: wrap;
+    }
+
+    .classify__option--aspects {
+        width: 100%;
+    }
+
+    .classify__option--position,
+    .classify__option--technology {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .classify__item {
+        display: flex;
+    }
+
+    .classify__item input {
+        width: 4%;
+    }
+
+    .classify__item label {
+        display: block;
+        width: 96%;
+    }
+
+    .modal__container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .payment-success {
+        width: 80%;
+    }
+}
+
+/*Tablet 740px - 1024px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .dashboard {
+        display: none;
+    }
+
+    .header__icon {
+        width: 10%;
+    }
+
+    .header__search {
+        width: 70%;
+    }
+
+    .header__time {
+        display: none;
+    }
+
+    .header__news {
+        width: 20%;
+    }
+
+    .header__label--bell {
+        padding-right: 20px;
+    }
+
+    .menu__mobile {
+        display: block;
+        width: 40%;
+        max-width: 100%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+
+    .header__label--bell {
+        display: none;
+    }
+
+    .modal__container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .payment-success {
+        width: 60%;
+    }
+}
+
+/*PC low 1024px - 1280px*/
+@media (min-width: 64em) and (max-width: 80em) {
+    .menu__mobile {
+        display: block;
+        width: 40%;
+        max-width: 100%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+}

@@ -1,0 +1,9 @@
+.carousel-control-prev-icon {
+    background-image: url('../img/back-arrow.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/right-arrow.png');
+}
+
+@import url('../node_modules/bootstrap/scss/_carousel.scss');

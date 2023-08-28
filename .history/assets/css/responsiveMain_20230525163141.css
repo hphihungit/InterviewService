@@ -1,0 +1,18 @@
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1024px) {
+    .logo--landing {
+        color: red;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 739px) {
+    .logo--landing {
+        color: blue;
+    }
+}
+
+/*Tablet & Mobile*/
+@media (max-width: 1024px) {
+    
+}

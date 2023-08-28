@@ -1,0 +1,16 @@
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+    .login_-logo {
+        display: none;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 46.1875em) {
+
+}
+
+/*Tablet & Mobile*/
+@media (max-width: 64em) {
+
+}

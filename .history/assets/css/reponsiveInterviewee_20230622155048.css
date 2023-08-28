@@ -1,0 +1,50 @@
+/*Mobile < 740px*/
+@media (max-width: 46.1875em) {
+    .dashboard {
+        display: none;
+    }
+
+    .header__icon {
+        width: 10%;
+    }
+
+    .header__search {
+        width: 70%;
+    }
+
+    .header__time {
+        display: none;
+    }
+
+    .header__news {
+        width: 20%;
+    }
+
+    .header__label--bell {
+        padding-right: 12px;
+    }
+
+    
+    .menu__mobile {
+        display: block;
+        width: 70%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+}
+
+/*Tablet 740 - 1028px*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+
+}
+
+/*PC Low 1028 - 1280px*/
+@media (min-width: 64em) and (max-width: 80em) {
+
+}

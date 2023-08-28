@@ -1,0 +1,15 @@
+.carousel-control-prev-icon {
+    background-image: url('../img/back-arrow.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/right-arrow.png');
+}
+
+ol, ul {
+    padding-left: 0px !important;
+}
+
+ol, ul, dl {
+    margin-bottom: 0px;
+}

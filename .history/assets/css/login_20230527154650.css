@@ -1,0 +1,11 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    width: 50%;
+    min-height: 500px;
+    background-color: palegoldenrod;
+}

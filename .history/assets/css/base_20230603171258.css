@@ -1,0 +1,21 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --blue-color : #40a9ff;
+    --text-color: #8f8f8f;
+    --scale: 1px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html, body {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}

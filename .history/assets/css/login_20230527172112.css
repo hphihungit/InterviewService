@@ -1,0 +1,156 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#login {
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+}
+
+.login__logo {
+    width: 50%;
+    min-height: 250px;
+    align-self: flex-start;
+}
+
+.logo {
+    width: 100%;
+    min-height: 150px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% -82%;
+}
+
+.logo__text--big {
+    color: var(--black-color);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.logo__text--small {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--black-color);
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.login__form {
+    width: 50%;
+    min-height: 250px;
+    align-self: flex-start;
+}
+
+.logo__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.register {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.register__text {
+    font-size: 15px;
+    align-self: center;
+}
+
+.register__btn {
+    margin-left: 16px;
+}
+
+.btn {
+    display: block;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+}
+
+.btn:hover {
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.label__email::before {
+    content: "*";
+    color: #ff4d4f;
+    padding-right: 4px;
+}
+
+.label__email {
+    margin-bottom: 8px;
+}
+
+.input__text {
+    padding: 8px 0px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input__text:hover {
+    border: 1px solid var(--hover-color);
+}
+
+.input__text:focus {
+    border: 1px solid var(--hover-color);
+    outline: 1px solid var(--hover-color);
+    box-shadow: 0 5px 5px rgba(64, 169, 255, 0.5);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 8px 0px;
+    background-image: linear-gradient(90deg, rgba(43, 98, 167, 1), rgba(43, 98, 167, 0.3));
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.form__dif::before {
+    content: "";
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.form__dif {
+    padding: 12px 0px;
+    width: 100%;
+}

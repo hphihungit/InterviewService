@@ -1,0 +1,80 @@
+/*Mobile < 740px*/
+@media (max-width: 46.1875em) {
+    .dashboard {
+        display: none;
+    }
+
+    .header__icon {
+        width: 10%;
+    }
+
+    .header__search {
+        width: 70%;
+    }
+
+    .header__time {
+        display: none;
+    }
+
+    .header__news {
+        width: 20%;
+    }
+
+    .header__label--bell {
+        padding-right: 12px;
+    }
+    
+    .menu__mobile {
+        display: block;
+        width: 70%;
+        max-width: 100%;
+    }
+
+    .header__label {
+        display: none;
+    }
+
+    .header__label--menu {
+        display: block;
+    }
+
+    .header__label--bell {
+        display: none;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content__main {
+        order: 1;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .content__sub {
+        order: 2;
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .content__avatar {
+        display: none;
+    }
+
+    .content__avatar-mobile {
+        display: flex;
+    }
+}
+
+/*Tablet 740px - 1028px*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+
+}
+
+/*PC low 1028px - 1280px*/
+@media (min-width: 64em) and (max-width: 80em) {
+
+}

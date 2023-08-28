@@ -1,0 +1,16 @@
+#dashboard {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: paleturquoise;
+}
+
+.dashboard__list {
+    width: 100%;
+}
+
+.dashboard__item {
+    
+}

@@ -1,0 +1,14 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register__form {
+    width: 50%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

@@ -1,0 +1,212 @@
+/*Tablet 740px - 1024px*/
+@media (min-width: 46.25em) and (max-width: 64em) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #login {
+        width: 80%;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+
+    #header {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .header__logo {
+        width: 50%;
+        min-height: 200px;
+        margin: 0 auto;
+        background-image: url('../img/logo.png');
+        background-position: 50% 200%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .login__logo {
+        display: none;
+    }
+
+    .login__form {
+        width: 80%;
+        min-height: 600px;
+        margin: 0 auto;
+    }
+
+    .logo__title {
+        font-size: 40px;
+    }
+
+    .register {
+        padding: 16px 0px;
+    }
+
+    .register__text {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .form__input {
+        padding-bottom: 20px;
+    }
+
+    .login__label {
+        font-size: 24px;
+    }
+
+    .login__input {
+        font-size: 24px;
+        padding: 8px 0px;
+    }
+
+    .button {
+        padding: 12px 0px;
+    }
+
+    .form__logo--dif i{
+        font-size: 48px;
+    }
+}
+
+/*Mobile < 740px*/
+@media (max-width: 46.1875em) {
+    #login {
+        width: 100%;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+
+    .login__logo {
+        display: none;
+    }
+
+    .login__form {
+        width: 90%;
+        min-height: 600px;
+        margin: 0 auto;
+    }
+
+    .logo__title {
+        font-size: 32px;
+    }
+
+    .register {
+        padding: 8px 0px;
+    }
+
+    .register__text {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .form__input {
+        padding-bottom: 20px;
+    }
+
+    .login__label {
+        font-size: 24px;
+    }
+
+    .login__input {
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .button {
+        padding: 10px 0px;
+    }
+
+    .form__logo--dif i{
+        font-size: 48px;
+    }
+}
+
+/*PC low*/
+@media (min-width: 64em) and (max-width: 80em) {
+    #main {
+        display: flex;
+    }
+
+    #login {
+        width: 80%;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+
+    #header {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .header__logo {
+        width: 50%;
+        min-height: 200px;
+        margin: 0 auto;
+        background-image: url('../img/logo.png');
+        background-position: 50% 0%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .login__logo {
+        display: none;
+    }
+
+    .login__form {
+        width: 80%;
+        min-height: 600px;
+        margin: 0 auto;
+    }
+
+    .logo__title {
+        font-size: 40px;
+    }
+
+    .register {
+        padding: 16px 0px;
+    }
+
+    .register__text {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .form__input {
+        padding-bottom: 20px;
+    }
+
+    .login__label {
+        font-size: 24px;
+    }
+
+    .login__input {
+        font-size: 24px;
+        padding: 8px 0px;
+    }
+
+    .button {
+        padding: 12px 0px;
+    }
+
+    .form__logo--dif i{
+        font-size: 48px;
+    }
+}

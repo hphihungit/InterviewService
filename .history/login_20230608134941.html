@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/responsiveLogin.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header__logo"></div>
+        </div>
+
+        <div id="login">
+            <div class="login__logo">
+                <div class="logo">
+
+                </div>
+
+                <div class="logo__text--big">
+                    Interview Service
+                </div>
+
+                <div class="logo__text--small">
+                    An interview is the way of face to face conversation between the interviewer and the interviewee
+                </div>
+            </div>
+
+            <div class="login__form">
+                <div class="logo__title">
+                    Login
+                </div>
+
+                <div class="form">
+                    <form action="" id="js-form-login">
+                        <div class="register">
+                            <div class="register__text">
+                                Have not account yet ?
+                            </div>
+
+                            <div class="register__btn">
+                                <a href="register.html" class="btn">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="form__input">
+                            <label for="email" class="login__label">Email</label>
+                            <input type="email" required name="email" id="email" class="login__input">
+                        </div>
+
+                        <div class="form__input">
+                            <label for="password" class="login__label">Password</label>
+                            <input type="password" required name="password" id="password" class="login__input">
+                        </div>
+
+                        <button id="js-form-btn" class="button">Login</button>
+
+                        <div class="form__dif">
+                            <span class="form__dif--text">or</span>
+                        </div>
+
+                        <div class="form__logo--dif">
+                            <i class="fa-brands fa-square-facebook" style="color: #2b86ff;"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var loginForm = document.getElementById('js-form-login');
+        var loginBtn = document.getElementById('js-form-btn');
+
+        loginBtn.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var userEmailValue = document.getElementById('email');
+            var userPasswordValue = document.getElementById('password');
+
+            var usernameValue = usernameInput.value.trim();
+            var passwordValue = passwordInput.value.trim();
+
+            if (userEmailValue === 'admin@123' && userPasswordValue === '123') {
+                window.location.href = 'admin.html';
+            } else {
+                alert('Please enter your email address');
+            }
+        });
+    </script>
+</body>
+</html>

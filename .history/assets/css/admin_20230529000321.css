@@ -1,0 +1,56 @@
+#dashboard {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(18deg, #fff, var(--blue-color));
+}
+
+.dashboard__logo {
+    width: 100%;
+    min-height: 100px;
+    background-image: url('../img/logo-landing.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 40%;  
+    margin-bottom: 20px;
+}
+
+.dashboard__list {
+    width: 100%
+}
+
+.dashboard__item {
+    padding: 12px 20px;   
+    display: flex;
+}
+
+.dashboard__item:hover {
+    background-color: var(--white-color);
+}
+
+.dashboard__item:hover i,
+.dashboard__item:hover a{
+    color: var(--blue-color);
+}
+
+.dashboard__item a {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.dashboard__item i {
+    color: var(--white-color);
+    font-size: 20px;
+    display: block;
+    width: 30%;
+}
+
+#container {
+    width: calc(100% - 20%);
+    height: 100vh;
+    background-color: paleturquoise;
+}

@@ -1,0 +1,28 @@
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1024px) {
+    
+}
+
+/*Mobile*/
+@media (max-width: 739px) {
+    
+}
+
+/*Tablet & Mobile*/
+@media (max-width: 1024px) {
+    .header__navbar {
+        display: none;
+    }
+
+    .navbar--wrap {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+    }
+
+    .navbar__mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

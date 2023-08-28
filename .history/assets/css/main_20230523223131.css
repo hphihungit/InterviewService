@@ -1,0 +1,58 @@
+#header {
+    width: 100%;
+    height: 720px;
+    background-color: pink;
+}
+
+#header .navbar--fixed {
+    width: 100%;
+    height: 72px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header__navbar {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    background-color: aquamarine;
+}
+
+.header__navbar .navbar__logo {
+    width: 25%;
+    height: 72px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo--landing {
+    width: 126px;
+    height: 72px;
+    background-image: url('../img/logo-landing.png');
+    background-repeat: no-repeat;
+    background-size: 116px;
+}
+
+.header__navbar .navbar__list {
+    width: 50%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__list .navbar__item {
+    display: inline-block;
+    padding: 0 24px;
+}
+
+.navbar__list .navbar__item a {
+    padding: 8px 0px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}

@@ -1,0 +1,40 @@
+@media (max-width: 36em) {
+    .dashboard {
+        display: none;
+    }
+    .nav__icon {
+        width: 10%;
+    }
+
+    .nav__search {
+        width: 90%;
+    }
+
+    .nav__news {
+        display: none;
+    }
+
+    .nav__time {
+        display: none;
+    }
+
+    .input__search--box {
+        height: 40px;
+    }
+}
+
+@media (min-width: 36em) {
+    
+}
+
+@media (min-width: 48em) {
+    
+}
+
+@media (min-width: 62em) {
+    
+}
+
+@media (min-width: 75em) {
+    
+}
